@@ -1,11 +1,7 @@
 
-
-
-
-
 public class Queue {
-  int SIZE = 5;
-  int items[] = new int[SIZE];
+  int size = 5;
+  int items[] = new int[size];
   int front, rear;
 
   Queue() {
@@ -14,7 +10,7 @@ public class Queue {
   }
 
   boolean isFull() {
-    if (front == 0 && rear == SIZE - 1) {
+    if (front == 0 && rear == size - 1) {
       return true;
     }
     return false;
